@@ -96,4 +96,7 @@ function sortProducts(){
     }
     displayItems(arr);
 }
-
+document.getElementById("cartBtn").addEventListener("click", function(){
+    window.location.href = "../cart.html"
+    console.log("hii")
+})

@@ -106,6 +106,7 @@ li > a {
   color: black;
   font-size: 12px;
   font-weight: bold;
+  
 }
 .cats > ul > li:nth-child(1) > a {
   color: red;
@@ -325,4 +326,6 @@ ul {
   font-weight: bolder;
   font-size: 20px;
 }
-
+#cartBtn:hover {
+  cursor: pointer;
+}
