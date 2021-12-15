@@ -36,6 +36,7 @@ var arr = [{name: 'Almond Milk & Honey Soothing & Caring Shower Cream 60ML', pri
 {name:"White Musk® Eau De Toilette 30ML Reno", price:"395", image:"https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1098144_white_musk_eau_de_toilette_30ml_brnz_inaaups373.jpg", category:"fragrance"}
 
 ]
+var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
 
 displayItems(arr);
 
@@ -57,6 +58,11 @@ function displayItems(arr){
 
         mainDiv.append(imgElem, titleDiv, priceDiv, btnElem);
         document.getElementById("prodContainer").appendChild(mainDiv);
+        btnElem.addEventListener("click", function(){
+         cartData.push(elem);
+         localStorage.setItem("cartData", JSON.stringify(cartData));
+         alert("item added to cart");
+        })
     })
 }
 
