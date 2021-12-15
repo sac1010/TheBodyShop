@@ -37,6 +37,7 @@ var arr = [{name: 'Almond Milk & Honey Soothing & Caring Shower Cream 60ML', pri
 
 ]
 var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+document.getElementById("cartNum").innerText = cartData.length
 
 displayItems(arr);
 
@@ -61,6 +62,7 @@ function displayItems(arr){
         btnElem.addEventListener("click", function(){
          cartData.push(elem);
          localStorage.setItem("cartData", JSON.stringify(cartData));
+         document.getElementById("cartNum").innerText = cartData.length
          alert("item added to cart");
         })
     })
