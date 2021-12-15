@@ -6,16 +6,21 @@ body {
 #head {
   height: 110px;
   width: 95%;
-  position: sticky;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  border-top: 1px solid grey;
   grid-gap: 5px;
   grid-template-areas:
     "a b b c"
     "d d d e";
+}
+.fix-header{
+  position: fixed;
+  width: 69%;
+  margin: auto;
+  background-color: white;
+  height: auto;
 }
 .flex {
   display: flex;
@@ -96,9 +101,15 @@ h1 > i {
 }
 #offerTime {
   width: 95%;
-  margin: 20px auto;
+  margin: auto;
+  margin-bottom: 0px;
   height: 35px;
   background-color: #b8cb84;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+
 }
 #banner {
   width: 95%;
@@ -161,7 +172,7 @@ h1 > i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 hr{
     margin: 0px;
@@ -178,6 +189,15 @@ button{
   border: 2px solid black;
   padding: 12px;
   width: 40%;
+}
+button:hover{
+  background-color: black;
+  color: white;
+}
+.dummy{
+  width: 95%;
+  margin: auto;
+  height: 190px;
 }
 
 

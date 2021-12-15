@@ -1,5 +1,5 @@
 var arr = [{name: 'Almond Milk & Honey Soothing & Caring Shower Cream 60ML', price: '225', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/a/banana_truly_nourishing_shampoo_60ml.jpg', category: 'body'},
-{name: ' Shower Gel Moringa 60ML', price: '225', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1054069_1_shower_gel_moringa_60ml_brnz_inbosps521.jpg', category: 'body'},
+{name: 'Shower Gel Moringa 60ML', price: '225', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1054069_1_shower_gel_moringa_60ml_brnz_inbosps521.jpg', category: 'body'},
 {name: 'Satsuma Shower Gel 60ML', price: '225', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1015207_1_shower_gel_satsuma_60ml_brnz_inbosps571_2.jpg', category: 'body'},
 {name: 'Wild Argan Oil Shower Gel', price: '350', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…234dc821d9f1d62/w/i/wild_argan_oil_shower_gel.jpg', category: 'body'},
 {name: 'Joy & Jasmine Shower Gel', price: '395', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…er_gel_jasmine_250ml_2021_a0x_brnz_inabcps033.jpg', category: 'body'},
@@ -15,7 +15,7 @@ var arr = [{name: 'Almond Milk & Honey Soothing & Caring Shower Cream 60ML', pri
 {name: 'Tea Tree Purifying & Balancing Shampoo 400ML', price: '1045', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…_tree_purifying_shampoo_400ml_brnz_inaaups030.jpg', category: 'hair'},
 {name: 'Shea Butter Richly Replenishing Shampoo 400ML', price: '1045', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…2021_1_shampoo_shea_400ml_a0x_brnz_inrbfps010.jpg', category: 'hair'},
 {name: 'Banana Truly Nourishing Shampoo 400ML', price: '1599', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…/1097893_shampoo_banana_400ml_brnz_inaaups016.jpg', category: 'hair'},
-{name: ' Strawberry Clearly Glossing Conditioner', price: '695', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…ditioner_strawberry_250ml_a0x_brnz_innedps245.jpg', category: 'hair'},
+{name: 'Strawberry Clearly Glossing Conditioner', price: '695', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…ditioner_strawberry_250ml_a0x_brnz_innedps245.jpg', category: 'hair'},
 {name: 'Shea Butter Richly Replenishing Conditioner', price: '799', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…pg_1055317_1_shea_conditioner_brnz_innepps192.jpg', category: 'hair'},
 {name: 'Banana Truly Nourishing Conditioner', price: '599', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…20_1_conditioner_banana_250ml_brnz_innpdps461.jpg', category: 'hair'},
 {name: 'Moringa Shine & Protection Conditioner', price: '745', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…47_conditioner_moringa_250mlbrnz_inaaups038_1.jpg', category: 'hair'},
@@ -48,7 +48,7 @@ var arr = [{name: 'Almond Milk & Honey Soothing & Caring Shower Cream 60ML', pri
 {name: 'Tea Tree Purifying Soap', price: '495', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…100g___soap_tea_tree_100g_a0x_brnz_inchrps320.jpg', category: 'skinCare'},
 {name: 'Carrot Wash Energizing Face Cleanser', price: '945', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…_1_face_wash_carrot_100ml_a0x_brnz_incrhps302.jpg', category: 'skinCare'},
 {name: 'Tea Tree Facial Wash', price: '745', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-52110001-1.jpg', category: 'skinCare'},
-{name: ' Seaweed Cleansing Facial Wash', price: '1045', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…53e8cb5724f5234dc821d9f1d62/b/s/bs-20014001-1.jpg', category: 'skinCare'},
+{name: 'Seaweed Cleansing Facial Wash', price: '1045', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…53e8cb5724f5234dc821d9f1d62/b/s/bs-20014001-1.jpg', category: 'skinCare'},
 {name: 'Roots of Strength™ Firming Shaping Essence Lotion', price: '1895', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…_essence_lotion_ros_160ml_a0x_brnz_innedps003.jpg', category: 'skinCare,'},
 {name: 'Camomile Gentle Eye Makeup Remover', price: '895', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…/c/a/camomile_gentle_eye_makeup_remover_250ml.jpg', category: 'skinCare'},
 {name: 'Tea Tree Skin Clearing Foaming Cleanser', price: '1045', image: 'https://staticbodyshop.gumlet.io/pub/media/catalog…53e8cb5724f5234dc821d9f1d62/b/s/bs-52109001-1.jpg', category: 'skinCare'},
@@ -98,14 +98,14 @@ function sortProducts(){
             return b.price-a.price;
         })
     }
-    else if(selected == "a-z"){
+    else if(selected == "z-a"){
         arr.sort(function (a, b) {
             if (a.name > b.name) return -1;
             if (a.name < b.name) return 1;
             return 0;
           });
     }
-    else if(selected== "z-a"){
+    else if(selected== "a-z"){
         arr.sort(function (a, b) {
             if (a.name > b.name) return 1;
             if (a.name < b.name) return -1;
