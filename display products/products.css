@@ -15,7 +15,7 @@ body {
     "a b b c"
     "d d d e";
 }
-.fix-header{
+.fix-header {
   position: fixed;
   width: 69%;
   margin: auto;
@@ -109,7 +109,6 @@ h1 > i {
   justify-content: space-around;
   align-items: center;
   font-weight: bold;
-
 }
 #banner {
   width: 95%;
@@ -129,75 +128,117 @@ h1 > i {
   background-color: rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
   text-align: center;
-  
 }
 #mainContainer {
   display: flex;
   width: 95%;
   margin: auto;
-  
 }
 #leftPanel {
   width: 22%;
-  height: 600px;
   margin: auto;
-  border: 1px solid black;
   margin-top: 92px;
-
+  background-color:#f7f7f7 ;
+  border: 1px solid rgb(175, 175, 175);
 
 }
 #rightContainer {
   width: 78%;
-
 }
-#sortDiv{
-    display: flex;
-    justify-content: flex-end;
-    font-weight: 600;
-    align-items: center;
+#sortDiv {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+  align-items: center;
 }
-#prodContainer{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
-    
+#prodContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
 }
-#prodContainer>div{
-    width: 31%;
-    height: 450px;
-    margin-top: 50px ;
-    text-align: center;
-    line-height: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+#prodContainer > div {
+  width: 31%;
+  height: 450px;
+  margin-top: 50px;
+  text-align: center;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-hr{
-    margin: 0px;
+hr {
+  margin: 0px;
 }
-select{
-    width:180px;
-    height: 40px;
-    margin-left: 10px;
-    background-color:#e1e1e1;
-    border: transparent;
+select {
+  width: 180px;
+  height: 40px;
+  margin-left: 10px;
+  background-color: #e1e1e1;
+  border: transparent;
 }
-button{
+button {
   background-color: white;
   border: 2px solid black;
   padding: 12px;
   width: 40%;
 }
-button:hover{
+button:hover {
   background-color: black;
   color: white;
 }
-.dummy{
+.dummy {
   width: 95%;
   margin: auto;
   height: 190px;
 }
+a{
+  text-decoration: none;
+
+}
+ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  
+}
+#leftPanel a{
+  display: block;
+  padding: 15px;
+  color: black;
+  font-weight: 600;
+  font-size: 17px;
+}
+#leftPanel a:hover{
+  background-color:#e1e1e1 ;
+}
+.main-nav-ul ul{
+  display: none;
+}
+.main-nav-ul li:hover ul{
+  display: block;
+}
+#heading{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+  background-color:#e1e1e1 ;
+}
+/* @media only screen and (min-width: 375px) and (max-width: 1400px) {
+  body {
+    width: 100%;
+  }
+  .fix-header {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    height: auto;
+  }
+} */
 
 
