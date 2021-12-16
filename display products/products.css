@@ -254,7 +254,7 @@ li > a {
 hr {
   margin: 0px;
 }
-select {
+#sort {
   width: 180px;
   height: 40px;
   margin-left: 10px;
