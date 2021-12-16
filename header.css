@@ -306,14 +306,14 @@ li > a{
   text-align: center;
   margin-top: 40px;
 }
-#find>button{
+#find>a>button{
   padding: 10px;
   font-size: 15px;
   font-weight: bold;
   background: white;
   border: 2px solid black;
 }
-#find>button:hover{
+#find>a>button:hover{
   color: white;
   background: black;
   cursor: pointer;
