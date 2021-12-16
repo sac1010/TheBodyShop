@@ -2,6 +2,7 @@
     width: 95%;
     height: 450px;
     margin: auto;
+    margin-top: 50px;
 }
 .flex{
     display: flex;
@@ -35,13 +36,15 @@ i{
     border: 1px solid black;
 }
 input{
-    width: 90%;
+    width: 92%;
+    height: 93%;
+    font-size: 16px;
     background-color: whitesmoke;
     border: 0;
     border-right: 1px solid black;
 }
 input+i{
-    padding-top: 10px;
+    padding-top: 7px;
 }
 .secnd{
     height: 53%;

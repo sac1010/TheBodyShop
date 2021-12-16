@@ -1,16 +1,20 @@
+
 #head{
-  height: 110px;
+  height: 140px;
   width: 95%;
-  position: sticky;
-  margin: auto;
+  position: fixed;
+  left: 2.5%;
+  top: 0;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(3,1fr);
   border-top: 1px solid grey;
+  background-color: white;
   grid-gap: 5px;
   grid-template-areas: "a b b c"
   "d d d e"
   "f f f f";
+  z-index: 1000;
 }
 .flex{
   display:flex;
@@ -44,21 +48,26 @@
 }
 #head>div:nth-child(6){
   grid-area: f;
+  width: 100%;
   background-color: rgb(184,203,132);
-    margin:auto;
-    width: 100%;
-    height: 40px;
-    text-align: center;
+  height: 40px;
+  margin-top: 3.5px;
+  text-align: center;
 }
-input{
+#search{
+  display: flex;
+}
+#search>input{
   border: 0;
   height: 89%;
-  width: 89%;
+  width: 80%;
   font-size: 18px;
+  padding-left: 5px;
+  background: white;
 }
-input+i{
-  padding:3px 3px;
-  font-size: large;
+#search>input+i{
+  text-align: center;
+  font-size: 20px;
 }
 h1{
   margin-top: 25px;
@@ -80,14 +89,25 @@ h1>i{
  padding: 10px;
  padding-top: 15px;
 }
-.icons>div:nth-child(2){
-  font-size: small;
+.icons>p{
+  font-size: 12px;
+  padding-left: 2px;
+}
+.icons>div>i{
+  font-size: x-large;
+  padding-top: 2px;
+  padding-right: 0;
+}
+.icons>p:nth-child(1){
+  margin-left: 0;
+}
+.icons>div>img{
   padding-top: 5px;
+  padding-left: 0;
 }
 .cats > ul {
   display: flex;
   padding-left: 0;
-
   margin-top: 0px;
   justify-content: space-evenly;
 }
@@ -110,7 +130,7 @@ li > a{
   text-decoration: underline;
 }
 .cats > ul >li:hover .box{
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
   top: 100px;
   opacity: 1;
   visibility: visible;
@@ -178,7 +198,151 @@ li > a{
 .row>ul>li>a:hover{
    text-decoration: underline;
 }
-.bar h4{
+.bar > h4{
   font-size: 20px;
   margin-top: 7px;
+}
+/* sliding images */
+.img-slider{
+  width: 95%;
+  margin: auto;
+  margin-top: 12%;
+  overflow: hidden;
+}
+#sliding-img{
+  width: 100%;
+  display: inline-flex;
+}
+#sliding-img>img{
+  width: 100%;
+}
+.btn{
+  position: absolute;
+  left     : 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+}
+.img-slider>.btn > span{
+  display: inline-block;
+  margin: 1px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: rgba(241, 229, 229, 0.925);
+}
+.active{
+  background-color: black !important;
+}
+
+/* cards */
+
+.cards{
+  margin: auto;
+  margin-top: 20px;
+  width: 95%;
+  height: 900px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 30px;
+}
+.cards>div{
+  height: 100%;
+}
+.cards>div>a>img{
+  width: 100%;
+  height: 100%;
+}
+
+/* come together act together */
+.come-act{
+  display: grid;
+  width: 95%;
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(6,1fr);
+  grid-template-areas: "a a"
+  "b c"
+  "b c"
+  "b c"
+  "b c"
+  "b c";
+}
+.come-act>div:nth-child(1){
+  grid-area: a;
+  text-align: center;
+  word-spacing: 5px;
+
+}
+.come-act>div:nth-child(1)>h1{
+  font-size: xx-large;
+}
+.come-act>div:nth-child(2){
+  grid-area: b;
+}
+.come-act>div:nth-child(3){
+  grid-area: c;
+  text-align: center;
+}
+.come-act>div:nth-child(3)>h1{
+  font-size: x-large;
+  font-weight: normal;
+  margin-top: 10px;
+}
+.come-act>div:nth-child(3)>p{
+  font-size: 17px;
+  line-height: 21px;
+  padding: 20px;
+  margin-top: -15px;
+  text-decoration: none;
+}
+.come-act>div:nth-child(3)>p:nth-child(1){
+  padding-top: 40px;
+}
+/* Find out more */
+#find{
+  text-align: center;
+  margin-top: 40px;
+}
+#find>button{
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background: white;
+  border: 2px solid black;
+}
+#find>button:hover{
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+/* about */
+.aboutthispage{
+  margin:auto;
+  width: 95%;
+  margin-top: 50px;
+  text-align: center;
+  word-spacing: 3px;
+  text-decoration: none;
+}
+.aboutthispage>h3{
+  font-size:21px;
+  font-weight: 800;
+}
+.aboutthispage>p:hover{
+  text-decoration: none;
+}
+.aboutthispage>p{
+  font-size: 15px;
+  line-height: 21px;
+  padding: 20px;
+  margin-top: -30px;
+}
+.aboutthispage>p+h3{
+  margin-top: -20px;
+}
+.aboutthispage>hr{
+  width: 100%;
 }
