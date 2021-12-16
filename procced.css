@@ -36,6 +36,7 @@ body{
     margin-left: 5%;
     background-color: #f7f7f7;
     padding-left: 30px;
+    height : 500px;
 }
 #truck{
 
@@ -76,7 +77,27 @@ th{
 #lower{
     margin-top: 50px;
     text-align: center;
-    /* border : 1px solid teal; */
     height: 200px;
     font-size: 15px;
+}
+
+#handle{
+    display: flex;
+}
+
+#showDetails{
+    text-align: center;
+    padding : 10px;
+}
+
+#showDetails > div{
+    border-bottom: 1px solid grey;
+    width : 400px;
+    
+}
+
+.imagesDo{
+    
+    height: 400px;
+    
 }

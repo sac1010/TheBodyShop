@@ -1,5 +1,6 @@
 var obj = JSON.parse(localStorage.getItem("data")) || {};
 
+
     display()
 
     function display(){
@@ -24,3 +25,42 @@ var obj = JSON.parse(localStorage.getItem("data")) || {};
 
 
     }
+
+var cartData = JSON.parse(localStorage.getItem("cartData")) || []; 
+
+cartData.map(function (elem){
+    var div = document.createElement("div");
+    var image = document.createElement("img");
+    image.setAttribute("src",elem.image)
+    image.setAttribute("class","imagesDo");
+    var name = document.createElement("h4");
+    name.textContent = elem.name;
+    var price = document.createElement("h4");
+    price.textContent = "₹"+elem.price;
+
+    div.append(image,name,price)
+
+    document.querySelector("#showDetails").append(div)
+
+})
+
+
+displayTotal ()
+
+function displayTotal(){
+
+    var total = 0;
+
+    for(var i = 0 ; i < cartData.length;i++){
+        total = Number(cartData[i].price) + total +100; 
+    }
+    
+    total = "Total Purchased +" + "Delivery Charges = " + total;
+    
+    
+    var h1 = document.createElement("h4");
+    
+    h1.textContent = total;
+    
+    document.querySelector("#showDetails").append(h1)   
+}
