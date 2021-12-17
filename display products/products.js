@@ -60,10 +60,7 @@ function displayItems(arr){
         mainDiv.append(imgElem, titleDiv, priceDiv, btnElem);
         document.getElementById("prodContainer").appendChild(mainDiv);
         btnElem.addEventListener("click", function(){
-         cartData.push(elem);
-         localStorage.setItem("cartData", JSON.stringify(cartData));
-         document.getElementById("cartNum").innerText = cartData.length
-         alert("item added to cart");
+            displayModal(elem);
         })
     })
 }
@@ -142,3 +139,51 @@ document.getElementById("1999-2999").addEventListener("click", function(){
     })
     displayItems(filtered)
 })
+var obj = {};
+var qty =0;
+function displayModal(elem){
+    var count =1;
+    document.getElementById("qty").innerHTML = count;
+    var modal = document.getElementById("modal");
+    modal.style.display = "block";
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image);
+    img.setAttribute("width", "100%");
+    modalLeft.innerText = "";
+    document.getElementById("modalLeft").append(img);
+    document.getElementById("title").innerHTML = elem.name;
+    document.getElementById("price").innerHTML = "MRP :₹ "+ elem.price;
+    document.getElementById("+btn").addEventListener("click", function(){
+        count++;
+        document.getElementById("qty").innerHTML = count;
+        qty =count;
+    })
+    document.getElementById("-btn").addEventListener("click", function(){
+       if(count>1){
+        count--;
+       }
+
+        document.getElementById("qty").innerHTML = count;
+        qty =count;
+
+    })
+
+    obj = elem;
+    qty =count;
+}
+closeBtn.addEventListener("click", function(){
+    var closeBtn = document.getElementById("closeBtn");
+    modal.style.display = "none";
+})
+
+document.getElementById("addCart").addEventListener("click", function(){
+    addToCart(obj);
+})
+ function addToCart(obj){
+     obj.qty = qty;
+     cartData.push(obj)
+    document.getElementById("cartNum").innerText = cartData.length
+    localStorage.setItem("cartData", JSON.stringify(cartData))
+    modal.style.display = "none";
+}
+
