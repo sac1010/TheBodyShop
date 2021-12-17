@@ -106,7 +106,6 @@ li > a {
   color: black;
   font-size: 12px;
   font-weight: bold;
-  
 }
 .cats > ul > li:nth-child(1) > a {
   color: red;
@@ -299,7 +298,6 @@ ul {
 }
 .main-nav-ul li:hover ul {
   display: block;
-  
 }
 #heading {
   width: 100%;
@@ -330,10 +328,10 @@ ul {
 #cartBtn:hover {
   cursor: pointer;
 }
-.arrow-right{
+.arrow-right {
   float: right;
 }
-.modal{
+.modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -344,53 +342,49 @@ ul {
   overflow: hidden;
   background-color: rgb(5, 5, 5, 0.5);
 }
-.modalContent{
+.modalContent {
   background-color: white;
-  margin: 100px  auto;
+  margin: 100px auto;
   width: 50%;
-  height: 70% ;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  height: 80%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   padding: 20px;
- 
 }
-#modalDisplay{
+#modalDisplay {
   display: flex;
   height: 100%;
   justify-content: space-around;
-
 }
-#modalDisplay>div{
+#modalDisplay > div {
   width: 45%;
   height: 100%;
-
 }
-.closeBtn{
+.closeBtn {
   color: rgb(161, 161, 161);
-  float: right ;
+  float: right;
   font-size: 25px;
   user-select: none;
 }
-.closeBtn:hover{
-  
+.closeBtn:hover {
   color: black;
 }
-#modalRight{
+#modalRight {
   line-height: 30px;
 }
-#modalRight button{
+#modalRight button {
   width: 90%;
   height: 60px;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: black;
   color: white;
-
 }
-#modalLeft{
+#modalLeft {
   display: flex;
   align-items: center;
 }
-.square{
+.square {
   width: 40px;
   height: 40px;
   border: 2px solid black;
@@ -401,14 +395,14 @@ ul {
   margin-right: 10px;
   user-select: none;
 }
-.square:hover{
+.square:hover {
   background-color: black;
   color: white;
 }
-#price{
+#price {
   font-weight: bold;
 }
-.modal a{
+.modal a {
   text-decoration: underline;
   color: black;
 }
