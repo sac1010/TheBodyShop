@@ -17,7 +17,7 @@ function signin(sin){
         for(var i = 0; i < exispass.length; i++){
             if(exispass[i].password == pswd){
                 alert("Your are now logged in");
-                window.location.href = "home.html";
+                window.location.href = "../header.html";
                 break;
             }
             else if (exispass[i].password != pswd){
