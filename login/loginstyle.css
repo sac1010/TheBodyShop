@@ -1,0 +1,417 @@
+*{
+    font-family: Roboto;
+}
+#header{
+     margin-top: -20px;
+} 
+#btos{
+    float: left; 
+    color: white;
+    margin-left: 20px; 
+    padding: 15px; 
+}
+#btos:hover{
+    cursor: pointer;
+}
+#hdiv{
+    background-color: black; 
+    text-align: center; 
+}
+h2{
+    text-align: center;
+}
+#reg{
+    font-size: small;
+}
+#hdiv > h1{
+    margin-right: 140px;
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+}
+#main_content{
+    height: 170px;
+    width: 55%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(247,247,247);
+    padding: 20px;
+}
+#eml{
+    border: 2px solid black;
+    background-color: rgb(247,247,247);;
+    width: 600px;
+    height: 40px;
+    font-size: 17px;
+}
+#nxt{
+    margin-left: 20px;
+    width: 180px;
+    height: 47px;
+    background-color: green;
+    border: green;
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+}
+#nxt:hover{
+    cursor: pointer;
+}
+#sfoot{
+    padding: 3px;
+    background-color: rgb(247,247,247);
+    margin-top: 80px;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    margin-top: 120px;
+}
+#footer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* REGISTER PAGE */
+
+#rfield{
+    width: 85%;
+    margin: auto;
+    background-color:rgb(247,247,247) ;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+#form{
+    width: 30%;
+    margin: auto;
+    padding-left: 50px;
+}
+#form > input{
+    width: 400px;
+    height: 40px;
+    border: 1px solid rgb(230, 224, 224);
+}
+#gndr{
+    width: 400px;
+    height: 50px;
+    border: 1px solid rgb(230, 224, 224);
+    background-color: rgb(228, 225, 225);
+}
+#cacc{
+    background-color: black;
+    border: none;
+    color: white;
+}
+#cacc:hover{
+    cursor: pointer;
+    background-color: rgb(46, 44, 44);
+}
+.str{
+    color: red;
+}
+#rsfoot{
+    width: 85%;
+    padding: 3px;
+    background-color: rgb(247,247,247);
+    margin-top: 100px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+/* PASSWORD VEIFICATION */
+
+#wlc{
+    width: 80%;
+    margin: auto;
+    border: 2px solid seagreen;
+    color: green;
+    padding-left: 20px;
+}
+#pdiv{
+    margin: auto;
+    width: 55%;
+    height: 250px;
+    background-color: rgb(247,247,247);
+    padding: 20px;
+    margin-top: 20px;
+}
+#pdiv > input{
+    width: 500px;
+    height: 40px;
+    border: 1px solid rgb(236, 229, 229);
+}
+#sin{
+    display: flex;
+}
+#sin > input{
+    background-color: black;
+    border: none;
+    color: white;
+    width: 90px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+#sin > p{
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+#sin > input:hover{
+    cursor: pointer;
+    background-color: rgb(46, 41, 41);
+}
+
+
+@media only screen and (min-width : 375px) and (max-width:768px){
+
+    /* LOGIN PAGE */
+     
+    #btos{
+        display: none;
+    }
+    #hdiv > h1{
+        color: white;
+        font-weight: 900;
+        font-size: 40px;
+        text-align: center;
+        margin-right: 0;
+    }
+    #main_content{
+        height: 170px;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        background-color: rgb(247,247,247);
+        padding: 20px;
+    }
+    #eml{
+        border: 2px solid black;
+        background-color: rgb(247,247,247);;
+        width: 100%;
+        height: 40px;
+        font-size: 17px;
+    }
+    #nxt{
+        width: 100%;
+        height: 47px;
+        margin-left: 0;
+        background-color: green;
+        border: green;
+        color: white;
+        font-size: 18px;
+        border-radius: 3px;
+        margin-top: 10px;
+    }
+    #sfoot{
+        padding: 3px;
+        background-color: rgb(247,247,247);
+        margin-top: 80px;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        margin-top: 120px;
+    }
+    
+    
+
+    /* REGISTER PAGE */
+
+    #form{
+        width: 100%;
+        margin: auto;
+        padding-left: 10px;
+    }
+    #form > input{
+        width: 95%;
+        height: 40px;
+        border: 1px solid rgb(230, 224, 224);
+    }
+    #rfield{
+        width: 100%;
+        margin: auto;
+        background-color:rgb(247,247,247) ;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    #gndr{
+        width: 95%;
+        height: 50px;
+        border: 1px solid rgb(230, 224, 224);
+        background-color: rgb(228, 225, 225);
+    }
+    #rsfoot{
+        width: 100%;
+        padding: 3px;
+        background-color: rgb(247,247,247);
+        margin-top: 100px;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    /* PASSWORD VERIFICATION */
+
+    #wlc{
+        width: 90%;
+        margin: auto;
+        border: 2px solid seagreen;
+        color: green;
+        padding-left: 20px;
+    }
+    #pdiv{
+        margin: auto;
+        width: 90%;
+        height: 250px;
+        background-color: rgb(247,247,247);
+        padding: 20px;
+        margin-top: 20px;
+    }
+    #pdiv > input{
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgb(236, 229, 229);
+    }
+    #sin{
+        display: block;
+    }
+    #sin > input{
+        background-color: black;
+        border: none;
+        color: white;
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    #sin > p{
+        margin-left: 0px;
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 375px){
+    #btos{
+        display: none;
+    }
+    #hdiv > h1{
+        color: white;
+        font-weight: 900;
+        font-size: 40px;
+        text-align: center;
+        margin-right: 0;
+    }
+    #main_content{
+        height: 170px;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        background-color: rgb(247,247,247);
+        padding: 20px;
+    }
+    #eml{
+        border: 2px solid black;
+        background-color: rgb(247,247,247);;
+        width: 100%;
+        height: 40px;
+        font-size: 17px;
+    }
+    #nxt{
+        width: 100%;
+        height: 47px;
+        margin-left: 0;
+        background-color: green;
+        border: green;
+        color: white;
+        font-size: 18px;
+        border-radius: 3px;
+        margin-top: 10px;
+    }
+    #sfoot{
+        padding: 3px;
+        background-color: rgb(247,247,247);
+        margin-top: 80px;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-top: 120px;
+    }
+    
+
+    /* REGISTER PAGE */
+
+    #form{
+        width: 100%;
+        margin: auto;
+        padding-left: 10px;
+    }
+    #form > input{
+        width: 95%;
+        height: 40px;
+        border: 1px solid rgb(230, 224, 224);
+    }
+    #rfield{
+        width: 100%;
+        margin: auto;
+        background-color:rgb(247,247,247) ;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    #gndr{
+        width: 95%;
+        height: 50px;
+        border: 1px solid rgb(230, 224, 224);
+        background-color: rgb(228, 225, 225);
+    }
+    #rsfoot{
+        width: 100%;
+        padding: 3px;
+        background-color: rgb(247,247,247);
+        margin-top: 100px;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    /* PASSWORD VERIFICATION */
+
+    #wlc{
+        width: 90%;
+        margin: auto;
+        border: 2px solid seagreen;
+        color: green;
+        padding-left: 20px;
+    }
+    #pdiv{
+        margin: auto;
+        width: 90%;
+        height: 250px;
+        background-color: rgb(247,247,247);
+        padding: 20px;
+        margin-top: 20px;
+    }
+    #pdiv > input{
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgb(236, 229, 229);
+    }
+    #sin{
+        display: block;
+    }
+    #sin > input{
+        background-color: black;
+        border: none;
+        color: white;
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    #sin > p{
+        margin-left: 0px;
+        padding-top: 10px;
+    }
+}
+
+
