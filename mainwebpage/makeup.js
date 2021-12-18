@@ -96,7 +96,7 @@ function sortProducts(){
     displayItems(filtered1);
 }
 document.getElementById("cartBtn").addEventListener("click", function(){
-    window.location.href = "../cart.html"
+    window.location.href = "cart.html"
     console.log("hii")
 })
 document.getElementById("skinCare").addEventListener("click", function(){

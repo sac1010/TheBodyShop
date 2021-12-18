@@ -85,3 +85,6 @@ function change(){
 
     window.location.href = "procced.html";
 }
+document.getElementById("back").addEventListener("click",function(){
+    window.location.href = "landingpage.html";
+})
