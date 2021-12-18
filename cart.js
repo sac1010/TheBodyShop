@@ -1,45 +1,16 @@
-var obj = JSON.parse(localStorage.getItem("data")) || {};
-
-
-    display()
-
-    function display(){
-
-        var div = document.createElement("div");
-        div.textContent = obj.name+" "+obj.last+" "+obj.street+" "+obj.city+" "+obj.phone
-        document.querySelector("#add").append(div);
-
-    }
-
-
-    function confirm(){
-
-        var x = document.querySelector("#checkbox");
-        if(x.checked === true){
-           alert("order confirmed thanks for shopping")
-
-        }
-        else{
-            
-        }
-
-
-    }
 
 var cartData = JSON.parse(localStorage.getItem("cartData")) || []; 
-
-
 
 mapping();
 
 function mapping(){
 
-    document.querySelector("#showDetails").innerHTML = "";
+    document.querySelector("#cartArea").innerHTML = "";
 
     var total = 0;
 
     for(var i = 0 ; i < cartData.length;i++){
-        total = Number(cartData[i].price) + total +100; 
+        total = Number(cartData[i].price) + total; 
     }
     
     total = "Toal Purchase : " + total;
@@ -50,7 +21,7 @@ function mapping(){
     
     h1.textContent = total;
     
-    document.querySelector("#showDetails").append(h1);
+    document.querySelector("#cartArea").append(h1);
 
     cartData.map(function (elem,index){
         
@@ -80,14 +51,12 @@ function mapping(){
     
         maindiv.append(div1,div2)
     
-        document.querySelector("#showDetails").append(maindiv)
+        document.querySelector("#cartArea").append(maindiv)
     
     })
     
 
 }
-
-
 
 function deletask(index){
     cartData.splice(index,1)
@@ -96,3 +65,23 @@ function deletask(index){
 
 }
 
+
+
+
+
+
+function change(){
+             
+    var obj = {
+        name : document.querySelector("#fname").value,
+        last : document.querySelector("#lname").value,
+        street : document.querySelector("#street").value,
+        state : document.querySelector("#state").value,
+        city : document.querySelector("#city").value,
+        phone : document.querySelector("#phone").value
+    }
+
+    localStorage.setItem("data",JSON.stringify(obj))
+
+    window.location.href = "procced.html";
+}
