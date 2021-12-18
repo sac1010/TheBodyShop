@@ -35,6 +35,11 @@ i {
   margin: 7px 10px;
   border: 1px solid black;
 }
+.arw>input{
+  width: 90%;
+  background-color: whitesmoke;
+  border:0;
+}
 .footerInput {
   width: 90%;
   background-color: whitesmoke;
