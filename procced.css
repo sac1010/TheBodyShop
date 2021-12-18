@@ -1,0 +1,125 @@
+body{
+    font-family: sans-serif;
+}
+#head{
+    height : 50px;
+    display: flex;
+    color : white;
+    background-color: black;
+    margin-top: -8px;
+}
+#header{
+    font-family: sans-serif;
+    font-weight: 400;
+    margin : auto;
+    font-size: 40px;
+    
+}
+#checkout{
+    text-align: center;
+}
+#shipping{
+  
+  display: flex;
+  justify-content: center;
+}
+#review{
+    padding-left: 10px;
+    color : #e4e4e4;
+}
+#back{
+    padding-left : 30px; 
+}
+#shippingDetails{
+    border : 1px solid transparent;
+    width : 60%;
+    margin-left: 5%;
+    background-color: #f7f7f7;
+    padding-left: 30px;
+}
+#truck{
+    font-size: 50px;
+}
+
+button:hover{
+    background-color: black;
+    color : white;
+}
+
+button{
+    color : black;
+    height: 40px;
+    width: 110px;
+    font-size: 20px;
+}
+
+th{
+    padding: 10px;
+}
+#add{
+    border : 1px solid transparent;
+    width : 20%;
+    line-height: 30px;
+}
+#images{
+    margin-top: 60px;
+    background-color: #f7f7f7;
+    text-align : center;
+}
+#bottom{
+    text-align: center;
+}
+#lower{
+    margin-top: 50px;
+    text-align: center;
+    height: 200px;
+    font-size: 15px;
+}
+
+#handle{
+    display: flex;
+}
+
+#showDetails{
+    text-align: center;
+    padding : 10px;
+    background-color: #f7f7f7;
+    margin-left: 5px;
+    margin-right: 5px;
+    width : 400px;
+}
+
+#showDetails > div{
+    border-bottom: 1px solid grey;
+    width : 400px;
+    
+}
+
+.imagesDo{  
+    height: 400px;
+}
+
+
+#side{
+    display: flex;
+    justify-content: space-around;
+}
+#remove{
+    height : 40px;
+    width : 40px;
+    font-size: 35px;
+    border : 1px solid transparent; 
+    background-color: transparent;
+}
+#cartImg{
+    height: 300px;
+}
+
+#total{
+    border-bottom: 1px solid black;
+    text-align: start;
+    margin-bottom: 15px;
+}
+#maindiv{
+    margin-top: 10px;
+}
