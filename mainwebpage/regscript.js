@@ -1,7 +1,9 @@
 document.querySelector("#btos").addEventListener("click", backtoshop);
 function backtoshop(){
-    window.location.href = "home.html";
+    window.location.href = "landingpage.html";
 }
+
+//REGISTER
 
 document.querySelector("#form").addEventListener("submit", register);
 var rarr = JSON.parse(localStorage.getItem("regdetails")) || []
@@ -36,7 +38,7 @@ function register(det){
         console.log(rarr)
         localStorage.setItem("regdetails", JSON.stringify(rarr));
         alert("Your now logged in");
-        window.location.href = "home.html";
+        window.location.href = "landingpage.html";
         
     }
     

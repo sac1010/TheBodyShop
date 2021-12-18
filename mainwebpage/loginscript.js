@@ -1,6 +1,6 @@
 document.querySelector("#btos").addEventListener("click", backtoshop);
 function backtoshop(){
-    window.location.href = "home.html";
+    window.location.href = "landingpage.html";
 }
 
 //LOGIN
@@ -20,7 +20,6 @@ function logd(event){
     else if(email.length > 0){
         for(var i = 0; i < existing.length; i++){
             if(existing[i].mail == email){
-                // alert("existing user")
                 window.location.href = "passverify.html";
                 break;
             }

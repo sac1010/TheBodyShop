@@ -60,4 +60,7 @@ data.map(function(elem){
     box2.append(name1,price1);
     box.append(box1,box2,icon);
     document.getElementById("afterprsn").append(box)
-})
+});
+document.querySelector("#brand").addEventListener("click",function(){
+    window.location.href = "landingpage.html";
+});

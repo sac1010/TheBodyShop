@@ -1,7 +1,9 @@
 document.querySelector("#btos").addEventListener("click", backtoshop);
 function backtoshop(){
-    window.location.href = "home.html";
+    window.location.href = "landingpage.html";
 }
+
+//PASSWORD VERIFICATION
 
 document.querySelector("#sbtn").addEventListener("click",signin);
 var exispass = JSON.parse(localStorage.getItem("regdetails"));
@@ -17,13 +19,12 @@ function signin(sin){
         for(var i = 0; i < exispass.length; i++){
             if(exispass[i].password == pswd){
                 alert("Your are now logged in");
-                window.location.href = "../header.html";
+                window.location.href = "landingpage.html";
                 break;
             }
-            else if (exispass[i].password != pswd){
-                alert("Invalid password");
-                break;
-            }
+            if(i == exispass.length -1){
+             alert("Invalid password");
+         }
         }
     }
 }
